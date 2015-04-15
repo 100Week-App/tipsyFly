@@ -1,0 +1,55 @@
+{
+    "fontName":"Helvetica",
+    "fontNameBold":"Helvetica-Bold",
+    "fontExtraExtraSmallSize":10,
+    "fontExtraSmallSize":12,
+    "fontMediumSmallSize":14,
+    "fontSmallSize":18,
+    "fontMediumSize":24,
+    "fontLargeSize":36,
+    "fontExtraLargeSize":48,
+    "elementCornerRadius":9.0,
+    "stageBackgroundColor": {
+        "red": 247.0,
+        "green": 247.0,
+        "blue": 247.0,
+        "alpha": 1.0
+    },
+    "elementBackgroundColor": {
+        "red": 240.0,
+        "green": 0.0,
+        "blue": 0.0,
+        "alpha": 1.0
+    },
+    "elementForegroundColor": {
+        "red": 255.0,
+        "green": 255.0,
+        "blue": 255.0,
+        "alpha": 1.0
+    },
+    "grayElementBackgroundColor": {
+        "red": 227.0,
+        "green": 227.0,
+        "blue": 227.0,
+        "alpha": 1.0
+    },
+    "greenElementColor": {
+        "red": 109.0,
+        "green": 164.0,
+        "blue": 126.0,
+        "alpha": 1.0
+    },
+    "blueActiveElementColor": {
+        "red": 36.0,
+        "green": 31.0,
+        "blue": 81.0,
+        "alpha": 1.0
+    },
+    "contentTextColor": {
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0,
+        "alpha": 1.0
+    }
+}
+

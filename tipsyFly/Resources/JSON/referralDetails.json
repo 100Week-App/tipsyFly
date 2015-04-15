@@ -1,0 +1,64 @@
+{
+    "termsLink":"http://www.learntodrill.com/terms-of-service?forapp=1",
+    "privacyLink":"http://www.learntodrill.com/terms-of-service?forapp=1",
+    "imageName":"SplashScreen640960.png",
+    "ipadImageName":"SplashScreen640960.png",
+    "emailRequired":true,
+    "skipProcess":false,
+    "referrals":[{
+                "1":{
+                "referralId": "1",
+                "referralName": "Google",
+                "emailRequired":true,
+                "downloadReferralResource":false,
+                "disableReferral":false
+                },
+                 "2":{
+                 "referralId": "2",
+                 "referralName": "YouTube",
+                 "emailRequired":true,
+                 "downloadReferralResource":false,
+                 "disableReferral":false
+                 },
+                 "3":{
+                 "referralId": "3",
+                 "referralName": "LinkedIn",
+                 "emailRequired":true,
+                 "downloadReferralResource":false,
+                 "disableReferral":false
+                 },
+                 "4":{
+                 "referralId": "4",
+                 "referralName": "Email",
+                 "emailRequired":true,
+                 "downloadReferralResource":false,
+                 "disableReferral":false
+                 },
+                 "5":{
+                 "referralId": "5",
+                 "referralName": "App Store",
+                 "emailRequired":true,
+                 "downloadReferralResource":false,
+                 "disableReferral":false
+                 },
+                 "6":{
+                 "referralId": "6",
+                 "referralName": "IADC",
+                 "emailRequired":true,
+                 "downloadReferralResource":false,
+                 "disableReferral":false
+                 },
+                 "7":{
+                 "referralId": "7",
+                 "referralName": "Other",
+                 "emailRequired":true,
+                 "downloadReferralResource":false,
+                 "disableReferral":false
+                 }
+                }],
+    "referralResources":{
+        "resources0":"globalTheme.json",
+        "resources1":"referral_logo.png",
+        "resources2":"referral_logo@2x.png"
+    }
+}

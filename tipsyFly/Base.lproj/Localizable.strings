@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  tipsyFly
+
+  Created by Mitesh Maheta on 13/04/15.
+  Copyright (c) 2015 tipsy. All rights reserved.
+*/
+
+"referralSelectionSuccessAlertTitle" = "You're in!";
+"referralSelectionSuccessAlertDescription" = "Thanks for taking a Falck Safety Services course. Welcome!";
+"referralSelectionSuccessAlertBtnOk" = "OK";
+
+"referralSelectionInternetfailedAlertTitle" = "Internet connection failed !";
+"referralSelectionInternetfailedAlertDescription" = "Internet is required to validate your Student ID. Please connect to Internet and retry";
+"referralSelectionInternetfailedAlertBtnOk" = "Retry";
