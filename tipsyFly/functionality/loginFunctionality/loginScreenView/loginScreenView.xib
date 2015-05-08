@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="loginScreenView">
             <connections>
-                <outlet property="btnFacebook" destination="Xd8-6f-Uv4" id="QnO-pL-ZZP"/>
+                <outlet property="btnCancel" destination="1Mq-kx-fcw" id="y0H-lj-Qxa"/>
+                <outlet property="btnFacebookLogin" destination="Xd8-6f-Uv4" id="7QQ-HH-Ui0"/>
                 <outlet property="btnForgotPassword" destination="60L-5v-mSS" id="ZYZ-Ao-B5K"/>
                 <outlet property="btnLogin" destination="n3Q-UT-Ewo" id="QMz-hL-oAm"/>
                 <outlet property="txtEmailID" destination="p8u-2c-EPm" id="dLK-SM-RCa"/>
@@ -53,7 +54,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xd8-6f-Uv4">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xd8-6f-Uv4" customClass="FBSDKLoginButton">
                     <rect key="frame" x="229" y="300" width="143" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="NHp-7o-OSk"/>
@@ -62,15 +63,20 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZB-Ex-chF">
-                    <rect key="frame" x="60" y="220" width="53" height="30"/>
-                    <state key="normal" title="Sign up">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mq-kx-fcw">
+                    <rect key="frame" x="10" y="20" width="70" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="idX-mD-NW4"/>
+                        <constraint firstAttribute="height" constant="30" id="zf9-vP-gFA"/>
+                    </constraints>
+                    <state key="normal" title="Back">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="1Mq-kx-fcw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="0n9-eH-uZ6"/>
                 <constraint firstAttribute="centerX" secondItem="Xd8-6f-Uv4" secondAttribute="centerX" id="245-iQ-E4S"/>
                 <constraint firstItem="p8u-2c-EPm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="2UJ-oG-WmU"/>
                 <constraint firstAttribute="trailing" secondItem="Q4V-uV-8CF" secondAttribute="trailing" constant="8" id="6Ba-zo-Bf4"/>
@@ -86,6 +92,7 @@
                 <constraint firstItem="n3Q-UT-Ewo" firstAttribute="top" secondItem="Q4V-uV-8CF" secondAttribute="bottom" constant="70" id="Vy8-d1-BJc"/>
                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="n3Q-UT-Ewo" secondAttribute="trailing" constant="8" id="hMG-XA-vfo"/>
                 <constraint firstAttribute="bottom" secondItem="60L-5v-mSS" secondAttribute="bottom" constant="100" id="ifA-R2-qe6"/>
+                <constraint firstItem="1Mq-kx-fcw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="lqW-7m-1aT"/>
                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xd8-6f-Uv4" secondAttribute="trailing" constant="8" id="ltu-Wg-OlS"/>
                 <constraint firstAttribute="centerX" secondItem="n3Q-UT-Ewo" secondAttribute="centerX" id="pYY-VH-D0A"/>
                 <constraint firstItem="Q4V-uV-8CF" firstAttribute="top" secondItem="p8u-2c-EPm" secondAttribute="bottom" constant="20" id="qIb-rA-ewB"/>

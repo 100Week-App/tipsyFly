@@ -67,27 +67,6 @@
     @try {
         deviceWidth = [[UIScreen mainScreen] bounds].size.width;
         deviceHeight = [[UIScreen mainScreen] bounds].size.height;
-        
-        if ([[self class] isDeviceOrientationLandscape]) {
-            if (deviceWidth > deviceHeight) {
-            
-            }
-            else {
-                int temp = deviceWidth;
-                deviceWidth = deviceHeight;
-                deviceHeight = temp;
-            }
-        }
-        else {
-            if (deviceHeight > deviceWidth) {
-                
-            }
-            else {
-                int temp = deviceWidth;
-                deviceWidth = deviceHeight;
-                deviceHeight = temp;
-            }
-        }
     }
     @catch (NSException *exception) {
     }

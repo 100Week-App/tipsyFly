@@ -13,3 +13,7 @@
 "referralSelectionInternetfailedAlertTitle" = "Internet connection failed !";
 "referralSelectionInternetfailedAlertDescription" = "Internet is required to validate your Student ID. Please connect to Internet and retry";
 "referralSelectionInternetfailedAlertBtnOk" = "Retry";
+
+"registrationScreenBtnForgotPassword" = "Forgot Password";
+"registrationScreenBtnForgotPasswordAlternateText" = "Send Mail";
+"registrationScreenBtnCancel" = "Back";

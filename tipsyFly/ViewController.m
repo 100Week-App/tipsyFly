@@ -17,6 +17,11 @@
 #import "horizontalViewController.h"
 #import "verticalViewController.h"
 
+#import "issuesParser.h"
+
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+
 @interface ViewController (){
     GlobalMethods *superMethods;
     GlobalModel *superModel;
@@ -37,14 +42,14 @@
     collectionViewController *collectionController = [[collectionViewController alloc]init];
     collectionTwoViewController *collection2Controller = [[collectionTwoViewController alloc]init];
     
-    [verticalPageController.arrayViewControllers addObject:feature1Controller];
-    [verticalPageController.arrayViewControllers addObject:collectionController];
-    [verticalPageController.arrayViewControllers addObject:collection2Controller];
-    
     horizontalViewController *horizontalController = [[horizontalViewController alloc]init];
     [horizontalController.arrayViewControllers addObject:coverViewController];
     [horizontalController.arrayViewControllers addObject:verticalPageController];
     [horizontalController.arrayViewControllers addObject:feature2Controller];
+    
+    [verticalPageController.arrayViewControllers addObject:feature1Controller];
+    [verticalPageController.arrayViewControllers addObject:collectionController];
+//    [verticalPageController.arrayViewControllers addObject:collection2Controller];
     
     [target presentViewController:horizontalController animated:YES completion:Nil];
 }
@@ -59,8 +64,18 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-    loginViewController *loginController = [[loginViewController alloc]init];
-    [self presentViewController:loginController animated:YES completion:Nil];
+//    if ([FBSDKAccessToken currentAccessToken]) {
+//        
+//        [ViewController initializeMainscreenWithTabBarFromTarget:self];
+//
+//    }else{
+//        
+//        loginViewController *loginController = [[loginViewController alloc]init];
+//        [self presentViewController:loginController animated:YES completion:Nil];
+//        
+//    }
+    issuesParser *issues = [[issuesParser alloc]init];
+    [self presentViewController:[issues buildPages] animated:YES completion:Nil];
 }
 
 - (void)initializeGlobal {

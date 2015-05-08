@@ -24,6 +24,7 @@
     [super viewDidLoad];
     [self loadLoginView];
 }
+
 -(void)loadLoginView{
     
     _loginView= [[loginScreenView alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
@@ -31,11 +32,13 @@
     [GlobalMethods addConstarintsToView:_loginView superView:self.view top:0 bottom:0 left:0 right:0];
     [_loginView.btnLogin addTarget:self action:@selector(btnSubmitTapped) forControlEvents:UIControlEventTouchUpInside];
     
+    _loginView.btnFacebookLogin.readPermissions = @[@"public_profile", @"email", @"user_friends"];
+    
+    [_loginView.btnForgotPassword addTarget:self action:@selector(btnForgotPasswordTaped) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_loginView.btnCancel addTarget:self action:@selector(btnCancelTaped) forControlEvents:UIControlEventTouchUpInside];
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 -(void)btnSubmitTapped{
     
     if ([GlobalMethods isInternetConnectionAvailable]) {
@@ -110,7 +113,7 @@
             
             _loginView.btnForgotPassword.userInteractionEnabled = FALSE;
             
-            _loginView.btnFacebook.userInteractionEnabled = FALSE;
+            _loginView.btnFacebookLogin.userInteractionEnabled = FALSE;
             
         }
         else {
@@ -123,7 +126,7 @@
             
             _loginView.btnForgotPassword.userInteractionEnabled = TRUE;
             
-            _loginView.btnFacebook.userInteractionEnabled = TRUE;
+            _loginView.btnFacebookLogin.userInteractionEnabled = TRUE;
         }
     }
     @catch (NSException *exception) {
@@ -161,6 +164,51 @@
     [alertView show];
     
 }
+
+-(void)btnForgotPasswordTaped{
+    
+    if ([_loginView.btnForgotPassword.titleLabel.text isEqualToString:[GlobalMethods getLocalizedValueForKey:keyRegistrationScreenBtnForgotPasswordAlternateText]]) {
+        
+        [PFUser requestPasswordResetForEmailInBackground:_loginView.txtEmailID.text];
+        
+        [self enableForgotPasswordUI:NO];
+        
+    }else{
+        
+        [self enableForgotPasswordUI:YES];
+        
+    }
+}
+
+-(void)btnCancelTaped{
+    
+    [self enableForgotPasswordUI:NO];
+    
+}
+
+-(void)enableForgotPasswordUI:(BOOL)status{
+    
+    if (status) {
+        
+        [_loginView.btnForgotPassword setTitle:[GlobalMethods getLocalizedValueForKey:keyRegistrationScreenBtnForgotPasswordAlternateText] forState:UIControlStateNormal];
+        _loginView.btnCancel.hidden = FALSE;
+        
+        _loginView.txtPassword.hidden = TRUE;
+        _loginView.btnLogin.hidden = TRUE;
+        _loginView.btnFacebookLogin.hidden = TRUE;
+        
+    }else{
+        
+        [_loginView.btnForgotPassword setTitle:[GlobalMethods getLocalizedValueForKey:keyRegistrationScreenBtnForgotPassword] forState:UIControlStateNormal];
+        
+        _loginView.btnCancel.hidden = TRUE;
+        
+        _loginView.txtPassword.hidden = FALSE;
+        _loginView.btnLogin.hidden = FALSE;
+        _loginView.btnFacebookLogin.hidden = FALSE;
+    }
+}
+
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     
     if (alertView.tag == tagValidIDAlert) {
@@ -175,6 +223,11 @@
 //    [superModel.userDefaults synchronize];
     
     [ViewController initializeMainscreenWithTabBarFromTarget:self];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 /*

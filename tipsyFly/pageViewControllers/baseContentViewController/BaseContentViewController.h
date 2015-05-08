@@ -15,4 +15,5 @@
 #pragma mark - Properties
 @property (nonatomic, strong) horizontalViewController *horizontalRootViewController;
 @property (nonatomic, strong) verticalViewController *verticalRootViewController;
+@property (nonatomic, strong) NSMutableArray *arrayElements;
 @end

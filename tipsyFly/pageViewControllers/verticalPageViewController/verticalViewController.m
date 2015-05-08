@@ -27,26 +27,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
-                                                             bundle: nil];
-    
-    self.pageViewController = (UIPageViewController*)[mainStoryboard
-                                                      instantiateViewControllerWithIdentifier:@"verticalPageViewController"];
-    
-    self.pageViewController.dataSource = self;
-    
-    UIViewController *startingViewController = [self viewControllerAtIndex:self.currentIndex];
-    
-    [self.pageViewController setViewControllers:@[startingViewController]
-                                      direction:UIPageViewControllerNavigationDirectionForward
-                                       animated:NO
-                                     completion:^(BOOL finished) {
-                                         // Completion code
-                                     }];
-    
-    [self addChildViewController:self.pageViewController];
-    [self.view addSubview:self.pageViewController.view];
-    [self.pageViewController didMoveToParentViewController:self];
+    @try {
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+                                                                 bundle: nil];
+        
+        self.pageViewController = (UIPageViewController*)[mainStoryboard
+                                                          instantiateViewControllerWithIdentifier:@"verticalPageViewController"];
+        
+        self.pageViewController.dataSource = self;
+        
+        UIViewController *startingViewController = [self viewControllerAtIndex:self.currentIndex];
+        
+        [self.pageViewController setViewControllers:@[startingViewController]
+                                          direction:UIPageViewControllerNavigationDirectionForward
+                                           animated:NO
+                                         completion:^(BOOL finished) {
+                                             // Completion code
+                                         }];
+        
+        [self addChildViewController:self.pageViewController];
+        [self.view addSubview:self.pageViewController.view];
+        [self.pageViewController didMoveToParentViewController:self];
+    }
+    @catch (NSException *exception) {
+        NSLog(@"NSException setAppLanguage: %@", [exception reason]);
+    }
+    @finally {
+        
+    }
     
 }
 
@@ -77,10 +85,16 @@
         return Nil;
     }
     
-    BaseContentViewController *viewController = (BaseContentViewController *)[_arrayViewControllers objectAtIndex:index];
-    viewController.restorationIdentifier = [@(index) stringValue];
-    viewController.verticalRootViewController = self;
-    return viewController;
+    if (![[_arrayViewControllers objectAtIndex:index] isKindOfClass:[horizontalViewController class]]) {
+        BaseContentViewController *viewController = (BaseContentViewController *)[_arrayViewControllers objectAtIndex:index];
+        viewController.restorationIdentifier = [@(index) stringValue];
+        viewController.verticalRootViewController = self;
+        return viewController;
+    }else{
+        UIViewController *viewController = [_arrayViewControllers objectAtIndex:index];
+        viewController.restorationIdentifier = [@(index) stringValue];
+        return viewController;
+    }
 }
 -(void)moveDownToVertical{
     

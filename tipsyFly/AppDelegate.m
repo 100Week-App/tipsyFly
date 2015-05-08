@@ -23,6 +23,8 @@
     // Override point for customization after application launch.
     [Parse setApplicationId:@"TJUSUKLmoTyufugTER10BxrMIgbgLXbnXu3cdLYO" clientKey:@"V5Pe4HvBOppCmWPnaQC5JEo2XvYDBAzz6TNZMyTG"];
     
+    [FBSDKLoginButton class];
+    
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     self.viewController = [[ViewController alloc]init];
     self.window.rootViewController = self.viewController;

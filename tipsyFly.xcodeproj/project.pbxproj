@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		78FC13EEF350236286E2F018 /* libPods-tipsyFly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF17A22BE304B7550DD397E9 /* libPods-tipsyFly.a */; };
+		A41E979F1AF249BD004E52A4 /* fashion.png in Resources */ = {isa = PBXBuildFile; fileRef = A41E979E1AF249BD004E52A4 /* fashion.png */; };
+		A46C2EAB1AE929C100F64279 /* issuesParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A46C2EAA1AE929C100F64279 /* issuesParser.m */; };
 		A479AA711ADD283D0098D56E /* LocalizationSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = A479AA701ADD283D0098D56E /* LocalizationSystem.m */; };
 		A479AA791ADD2C170098D56E /* elementSizeAndPosition.json in Resources */ = {isa = PBXBuildFile; fileRef = A479AA731ADD2C170098D56E /* elementSizeAndPosition.json */; };
 		A479AA7A1ADD2C170098D56E /* elementSizeAndPositionIpad.json in Resources */ = {isa = PBXBuildFile; fileRef = A479AA741ADD2C170098D56E /* elementSizeAndPositionIpad.json */; };
 		A479AA7B1ADD2C170098D56E /* globalTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = A479AA751ADD2C170098D56E /* globalTheme.json */; };
-		A479AA7C1ADD2C170098D56E /* referralDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = A479AA761ADD2C170098D56E /* referralDetails.json */; };
-		A479AA7D1ADD2C170098D56E /* registrationTypeIADC.json in Resources */ = {isa = PBXBuildFile; fileRef = A479AA771ADD2C170098D56E /* registrationTypeIADC.json */; };
+		A479AA7D1ADD2C170098D56E /* issue1.json in Resources */ = {isa = PBXBuildFile; fileRef = A479AA771ADD2C170098D56E /* issue1.json */; };
 		A479AA7E1ADD2C170098D56E /* supportedLanguages.json in Resources */ = {isa = PBXBuildFile; fileRef = A479AA781ADD2C170098D56E /* supportedLanguages.json */; };
 		A4F0123F1ADBC9910045CB49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F0123E1ADBC9910045CB49 /* main.m */; };
 		A4F012421ADBC9910045CB49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F012411ADBC9910045CB49 /* AppDelegate.m */; };
@@ -80,13 +81,15 @@
 /* Begin PBXFileReference section */
 		0957CE859A8B2FCDF96CD855 /* Pods-tipsyFly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tipsyFly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tipsyFly/Pods-tipsyFly.debug.xcconfig"; sourceTree = "<group>"; };
 		8EA63B569BC39CF97BBBEA86 /* Pods-tipsyFly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tipsyFly.release.xcconfig"; path = "Pods/Target Support Files/Pods-tipsyFly/Pods-tipsyFly.release.xcconfig"; sourceTree = "<group>"; };
+		A41E979E1AF249BD004E52A4 /* fashion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fashion.png; sourceTree = "<group>"; };
+		A46C2EA91AE929C100F64279 /* issuesParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = issuesParser.h; sourceTree = "<group>"; };
+		A46C2EAA1AE929C100F64279 /* issuesParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = issuesParser.m; sourceTree = "<group>"; };
 		A479AA6F1ADD283D0098D56E /* LocalizationSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationSystem.h; sourceTree = "<group>"; };
 		A479AA701ADD283D0098D56E /* LocalizationSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationSystem.m; sourceTree = "<group>"; };
 		A479AA731ADD2C170098D56E /* elementSizeAndPosition.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = elementSizeAndPosition.json; sourceTree = "<group>"; };
 		A479AA741ADD2C170098D56E /* elementSizeAndPositionIpad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = elementSizeAndPositionIpad.json; sourceTree = "<group>"; };
 		A479AA751ADD2C170098D56E /* globalTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = globalTheme.json; sourceTree = "<group>"; };
-		A479AA761ADD2C170098D56E /* referralDetails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = referralDetails.json; sourceTree = "<group>"; };
-		A479AA771ADD2C170098D56E /* registrationTypeIADC.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = registrationTypeIADC.json; sourceTree = "<group>"; };
+		A479AA771ADD2C170098D56E /* issue1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = issue1.json; sourceTree = "<group>"; };
 		A479AA781ADD2C170098D56E /* supportedLanguages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = supportedLanguages.json; sourceTree = "<group>"; };
 		A4F012391ADBC9910045CB49 /* tipsyFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipsyFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F0123D1ADBC9910045CB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -198,6 +201,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A46C2EA81AE9148700F64279 /* issueParser */ = {
+			isa = PBXGroup;
+			children = (
+				A46C2EA91AE929C100F64279 /* issuesParser.h */,
+				A46C2EAA1AE929C100F64279 /* issuesParser.m */,
+			);
+			path = issueParser;
+			sourceTree = "<group>";
+		};
 		A479AA6E1ADD283D0098D56E /* LocalizationSystem */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,8 +225,7 @@
 				A479AA731ADD2C170098D56E /* elementSizeAndPosition.json */,
 				A479AA741ADD2C170098D56E /* elementSizeAndPositionIpad.json */,
 				A479AA751ADD2C170098D56E /* globalTheme.json */,
-				A479AA761ADD2C170098D56E /* referralDetails.json */,
-				A479AA771ADD2C170098D56E /* registrationTypeIADC.json */,
+				A479AA771ADD2C170098D56E /* issue1.json */,
 				A479AA781ADD2C170098D56E /* supportedLanguages.json */,
 			);
 			path = JSON;
@@ -290,6 +301,7 @@
 		A4F012621ADBCBD20045CB49 /* functionality */ = {
 			isa = PBXGroup;
 			children = (
+				A46C2EA81AE9148700F64279 /* issueParser */,
 				A4F012631ADBCBD20045CB49 /* loginFunctionality */,
 			);
 			path = functionality;
@@ -507,6 +519,7 @@
 		A4F012A21ADBCBD20045CB49 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A41E979E1AF249BD004E52A4 /* fashion.png */,
 				A4F012A31ADBCBD20045CB49 /* feature1.png */,
 				A4F012A41ADBCBD20045CB49 /* feature11.png */,
 				A4F012A51ADBCBD20045CB49 /* feature2.png */,
@@ -639,13 +652,13 @@
 			files = (
 				A479AA791ADD2C170098D56E /* elementSizeAndPosition.json in Resources */,
 				A4F012BF1ADBCBD20045CB49 /* featureTwoScreenView.xib in Resources */,
-				A479AA7C1ADD2C170098D56E /* referralDetails.json in Resources */,
 				A479AA7B1ADD2C170098D56E /* globalTheme.json in Resources */,
 				A4F012C51ADBCBD20045CB49 /* feature2.png in Resources */,
 				A4F012B31ADBCBD20045CB49 /* coverView.xib in Resources */,
 				A4F012C61ADBCBD20045CB49 /* mockupMainPage.png in Resources */,
 				A4F012C71ADBCBD20045CB49 /* mockupMainPage1.png in Resources */,
 				A4F012AC1ADBCBD20045CB49 /* loginScreenView.xib in Resources */,
+				A41E979F1AF249BD004E52A4 /* fashion.png in Resources */,
 				A4F012481ADBC9910045CB49 /* Main.storyboard in Resources */,
 				A4F012B91ADBCBD20045CB49 /* collectionScreenView.xib in Resources */,
 				A4F012C41ADBCBD20045CB49 /* feature11.png in Resources */,
@@ -657,7 +670,7 @@
 				A479AA7E1ADD2C170098D56E /* supportedLanguages.json in Resources */,
 				A4F012C31ADBCBD20045CB49 /* feature1.png in Resources */,
 				A4F012BC1ADBCBD20045CB49 /* featureView.xib in Resources */,
-				A479AA7D1ADD2C170098D56E /* registrationTypeIADC.json in Resources */,
+				A479AA7D1ADD2C170098D56E /* issue1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,6 +739,7 @@
 				A4F012B71ADBCBD20045CB49 /* collectionTwoViewController.m in Sources */,
 				A4F012AF1ADBCBD20045CB49 /* GlobalModel.m in Sources */,
 				A4F012AE1ADBCBD20045CB49 /* GlobalMethods.m in Sources */,
+				A46C2EAB1AE929C100F64279 /* issuesParser.m in Sources */,
 				A4F012B11ADBCBD20045CB49 /* coverPageViewController.m in Sources */,
 				A4F012C11ADBCBD20045CB49 /* horizontalViewController.m in Sources */,
 				A4F013051ADC0DAD0045CB49 /* DBAccess.m in Sources */,

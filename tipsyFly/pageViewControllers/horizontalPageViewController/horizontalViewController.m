@@ -29,7 +29,7 @@
                                                              bundle: nil];
     
     self.pageViewController = (UIPageViewController*)[mainStoryboard
-                                                       instantiateViewControllerWithIdentifier:@"horizontalPageViewController"];
+                                                      instantiateViewControllerWithIdentifier:@"horizontalPageViewController"];
     
     self.pageViewController.dataSource = self;
     

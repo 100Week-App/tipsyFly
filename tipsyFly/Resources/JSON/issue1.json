@@ -1,0 +1,285 @@
+{
+    "pages": [
+              {
+              "id":"1",
+              "type":"horizontal",
+              "subPages": [
+                           {
+                           "id":"2",
+                           "elements":[{
+                                       "id":"3",
+                                       "type":"image",
+                                       "x":"0",
+                                       "y":"0",
+                                        "width":"100%",
+                                       "height":"50%",
+                                       "imageName":"fashion.png"
+                                       },
+                                       {
+                                       "id":"4",
+                                       "type":"label",
+                                       "x":"8",
+                                       "y":"50%",
+                                       "width":"100%",
+                                       "height":"30",
+                                       "text":"Cover Page",
+                                       "fontSize":22,
+                                       "fontStyle":"bold"
+                                       }
+                                       ]
+                           },
+                           {
+                           "id":"5",
+                           "type":"vertical",
+                           "subPages": [
+                                        {
+                                        "id":"6",
+                                        "elements":[{
+                                                    "id":"7",
+                                                    "type":"image",
+                                                    "x":"0",
+                                                    "y":"0",
+                                                    "width":"100%",
+                                                    "height":"50%",
+                                                    "imageName":"feature1.png"
+                                                    },
+                                                    {
+                                                    "id":"8",
+                                                    "type":"label",
+                                                    "x":"8",
+                                                    "y":"+20",
+                                                    "width":"100%",
+                                                    "height":"30",
+                                                    "text":"Top 10 looks from Fashion week",
+                                                    "fontSize":22,
+                                                    "fontStyle":"italic"
+                                                    },
+                                                    {
+                                                    "id":"9",
+                                                    "type":"label",
+                                                    "x":"8",
+                                                    "y":"+10",
+                                                    "width":"100%",
+                                                    "height":"0",
+                                                    "text":"We compiled our favourite looks from this years fashion week, and have displayed them all for you right here, right now!",
+                                                    "fontSize":14
+                                                    },
+                                                    {
+                                                    "id":"10",
+                                                    "type":"btnMoveToCollection",
+                                                    "collectionID":1,
+                                                    "x":"50%",
+                                                    "y":"-50",
+                                                    "width":"100",
+                                                    "height":"50",
+                                                    "text":"Explore Now",
+                                                    "fontSize":18
+                                                    }
+                                                    ]
+                                        },
+                                        {
+                                        "id":"11",
+                                        "type":"horizontal",
+                                        "subPages": [
+                                                     {
+                                                     "id":"12",
+                                                     "elements":[{
+                                                                 "id":"13",
+                                                                 "type":"image",
+                                                                 "x":"0",
+                                                                 "y":"0",
+                                                                 "width":"100%",
+                                                                 "height":"50%",
+                                                                 "imageName":"feature11.png"
+                                                                 },
+                                                                 {
+                                                                 "id":"14",
+                                                                 "type":"label",
+                                                                 "x":"10",
+                                                                 "y":"+20",
+                                                                 "width":"100%",
+                                                                 "height":"30",
+                                                                 "text":"Cover Page",
+                                                                 "fontSize":22,
+                                                                 "fontStyle":"bold"
+                                                                 }
+                                                                 ]
+                                                     },
+                                                     {
+                                                     "id":"15",
+                                                     "collectionID":1,
+                                                     "products":[
+                                                                 {
+                                                                 "id":"16",
+                                                                 "imageName":"feature2.png",
+                                                                 "title":"Louis Vuitton",
+                                                                 "text":"A beautiful leather bag by LV, worn beautifully by Kim",
+                                                                 "price":"$717"
+                                                                 },
+                                                                 {
+                                                                 "id":"17",
+                                                                 "imageName":"fashion.png",
+                                                                 "title":"Louis Vuitton",
+                                                                 "text":"A beautiful leather bag by LV, worn beautifully by Kim",
+                                                                 "price":"$717"
+                                                                 },
+                                                                 {
+                                                                 "id":"18",
+                                                                 "imageName":"fashion.png",
+                                                                 "title":"Louis Vuitton",
+                                                                 "text":"A beautiful leather bag by LV, worn beautifully by Kim",
+                                                                 "price":"$717"
+                                                                 },
+                                                                 {
+                                                                 "id":"19",
+                                                                 "imageName":"fashion.png",
+                                                                 "title":"Louis Vuitton",
+                                                                 "text":"A beautiful leather bag by LV, worn beautifully by Kim",
+                                                                 "price":"$717"
+                                                                 },
+                                                                 {
+                                                                 "id":"20",
+                                                                 "imageName":"fashion.png",
+                                                                 "title":"Louis Vuitton",
+                                                                 "text":"A beautiful leather bag by LV, worn beautifully by Kim",
+                                                                 "price":"$717"
+                                                                 },
+                                                                 {
+                                                                 "id":"21",
+                                                                 "imageName":"fashion.png",
+                                                                 "title":"Louis Vuitton",
+                                                                 "text":"A beautiful leather bag by LV, worn beautifully by Kim",
+                                                                 "price":"$717"
+                                                                 },
+                                                                 {
+                                                                 "id":"22",
+                                                                 "imageName":"fashion.png",
+                                                                 "title":"Louis Vuitton",
+                                                                 "text":"A beautiful leather bag by LV, worn beautifully by Kim",
+                                                                 "price":"$717"
+                                                                 }
+                                                                 ],
+                                                     "elements":[{
+                                                                 "id":"23",
+                                                                 "type":"image",
+                                                                 "x":"0",
+                                                                 "y":"0",
+                                                                 "width":"100%",
+                                                                 "height":"50%",
+                                                                 "imageName":"fashion.png"
+                                                                 },
+                                                                 {
+                                                                 "id":"24",
+                                                                 "type":"label",
+                                                                 "x":"8",
+                                                                 "y":"+20",
+                                                                 "width":"100%",
+                                                                 "height":"30",
+                                                                 "text":"1 / 1 Beyonce Sporting a Black Michael Kors Top",
+                                                                 "fontSize":22,
+                                                                 "fontStyle":"bold"
+                                                                 },
+                                                                 {
+                                                                 "id":"25",
+                                                                 "type":"label",
+                                                                 "x":"8",
+                                                                 "y":"+20",
+                                                                 "width":"100%",
+                                                                 "height":"30",
+                                                                 "text":"27 Products in this Collection",
+                                                                 "fontSize":18
+                                                                 },
+                                                                 {
+                                                                 "id":"26",
+                                                                 "type":"label",
+                                                                 "x":"8",
+                                                                 "y":"+10",
+                                                                 "width":"100%",
+                                                                 "height":"0",
+                                                                 "text":"We loved this classic and chic look by Beyonce, really brings out her highlights!",
+                                                                 "fontSize":18
+                                                                 },
+                                                                 {
+                                                                 "parts": [
+                                                                           {
+                                                                           "id":"27",
+                                                                           "type":"imageSlideShow",
+                                                                           "x":"0",
+                                                                           "y":"-30",
+                                                                           "width":"200",
+                                                                           "height":"100",
+                                                                           "productsid":[
+                                                                                        "1",
+                                                                                        "2",
+                                                                                        "3",
+                                                                                        "4",
+                                                                                        "5"
+                                                                                        ]
+                                                                           },
+                                                                           {
+                                                                           "id":"28",
+                                                                           "type":"btnShowAllProduct",
+                                                                           "x":"+10",
+                                                                           "y":"-30",
+                                                                           "width":"100",
+                                                                           "height":"80",
+                                                                           "text":"Shop Here"
+                                                                           }
+                                                                           ]
+                                                                 }
+                                                                 ]
+                                                     }
+                                                     ]
+                                        }
+                                        ]
+                           },
+                           {
+                           "id":"29",
+                           "elements":[{
+                                       "id":"30",
+                                       "type":"image",
+                                       "x":"0",
+                                       "y":"0",
+                                       "width":"100%",
+                                       "height":"50%",
+                                       "imageName":"fashion.png"
+                                       },
+                                       {
+                                       "id":"31",
+                                       "type":"label",
+                                       "x":"8",
+                                       "y":"+20",
+                                       "width":"100%",
+                                       "height":"30",
+                                       "text":"Product of the week",
+                                       "fontSize":22
+                                       },
+                                       {
+                                       "id":"32",
+                                       "type":"label",
+                                       "x":"8",
+                                       "y":"+10",
+                                       "width":"100%",
+                                       "height":"0",
+                                       "text":"We compiled our favourite looks from this years fashion week, and have displayed them all for you right here, right now!",
+                                       "fontSize":18
+                                       },
+                                       {
+                                       "id":"33",
+                                       "type":"btnMoveToProduct",
+                                       "collectionID":1,
+                                       "productsid":6,
+                                       "x":"50%",
+                                       "y":"-50",
+                                       "width":"100",
+                                       "height":"50",
+                                       "text":"Explore Now",
+                                       "fontSize":18
+                                       }
+                                       ]
+                           }
+                           ]
+              }
+              ]
+    
+}
